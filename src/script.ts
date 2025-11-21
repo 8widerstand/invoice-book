@@ -63,7 +63,7 @@ class FormInput {
             return [type, firstName, lastName, address, country, town, zip, product, price, quantity, tva];
         }
         alert("Numeric value must be a number");
-        return
+        return;
     }
 }
 
