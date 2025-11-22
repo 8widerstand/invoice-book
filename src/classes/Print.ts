@@ -1,0 +1,1 @@
+import {HasPrint} from "../Interfaces/HasPrint.js";export class Print implements HasPrint {    constructor(private element: HTMLElement) {    }    print() {       document.body.innerHTML = this.element.innerHTML ;       window.print();       document.location.reload();    }}
