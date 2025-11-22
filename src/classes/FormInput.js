@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FormInput = void 0;
+var Datas_1 = require("./Datas");
 var FormInput = /** @class */ (function () {
     function FormInput() {
         this.form = document.getElementById('form');
@@ -27,6 +28,9 @@ var FormInput = /** @class */ (function () {
         if (Array.isArray(inputs)) {
             var type = inputs[0], firstName = inputs[1], lastName = inputs[2], address = inputs[3], country = inputs[4], town = inputs[5], zip = inputs[6], product = inputs[7], price = inputs[8], quantity = inputs[9], tva = inputs[10];
             console.log(type, firstName, lastName, address, country, town, zip, product, price, quantity, tva);
+            var docDatas = void 0;
+            var date = new Date();
+            docDatas = new Datas_1.Datas(type, firstName, lastName, address, country, town, zip, product, price, quantity, tva, date);
         }
     };
     FormInput.prototype.inputDatas = function () {
