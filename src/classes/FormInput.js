@@ -31,6 +31,7 @@ var FormInput = /** @class */ (function () {
             var docDatas = void 0;
             var date = new Date();
             docDatas = new Datas_1.Datas(type, firstName, lastName, address, country, town, zip, product, price, quantity, tva, date);
+            console.log(docDatas.htmlFormat());
         }
     };
     FormInput.prototype.inputDatas = function () {
@@ -49,7 +50,6 @@ var FormInput = /** @class */ (function () {
             return [type, firstName, lastName, address, country, town, zip, product, price, quantity, tva];
         }
         alert("Numeric value must be a number");
-        return;
     };
     return FormInput;
 }());
